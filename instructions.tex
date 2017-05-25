@@ -735,10 +735,12 @@ Accu.=\frac{\sqrt{S+B}}{S} = 4.5\%.
 
 \subsection{Analysis of $e^+e^-\rightarrow ZH, Z\rightarrow \nu\bar{\nu}, H\rightarrow WW^*, WW^*\rightarrow q\bar{q}q\bar{q}$ decay}
 \subsubsection{Event selection}
-This is a hadronic decay channel and no isolated lepton. Lost of the Standard Model background would not be 
-suppressed by no isolated lepton and at least two jets.
-The number of final particles is required to be larger, $No._{Particles}^{Total} > 20$, because the final particles are 
-produced a lot after hadronization of quarks. And fraction of hadronic process would be enhanced a lot by this requirement.
+This is a hadronic channel that features no leptons, light flavour jets
+and large missing transverse energy. The SM background is
+reduced by vetoing events with isolated leptons and by requiring at
+least two jets. The event particle multiplicity is required to be large,
+$N_{\mathrm{Particles}}^{\mathrm{Total}} > 20$, due to the many hadrons produced
+after the quark hadronization takes place.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width= 0.35\textwidth]{nnH/fourq/TotPart}
@@ -747,23 +749,31 @@ produced a lot after hadronization of quarks. And fraction of hadronic process w
 	is required, $E > 1\gev$}
 \end{figure}
 
-The the jet clustering has been done twice. At the first time, 
-two jets are clustered to reject the two jets background, such as $H\rightarrow q\bar{q}$ decay of Higgs background, 
-$ZZ$ semi-leptonic decay and "single $Z-nu$" semi-leptonic decay process of the Standard Model background. 
-These two jets are required $Btagging < 0.9$, $Cos\theta_{2jets} > 0.87$ and $\Sigma|M_{Inv}^{2jet}| > 50\gev/c^2$. 
-And at the second time, four jets are required. In this situation, the characterizes of signal are more important. 
-Y value is effective to distinguish the signal and background. The event is required to have $Y_{34} > 0.005$. 
-According to these four jets, we would get two components which are the combination of four momentum of among two jets. 
-The invariant mass of one of the components should be near the mass peak of the $W$ boson, and the jets in the other part 
-are regard as from virtual $W$ boson decay. Figure~\ref{fig:nnHfourqFMass} shows the distribution of these two component. 
-The combined functions are:
+{\color{red}[It is not clear how this process is done, please clarify]}
+For this study jet selection is done in two steps. In the first step,
+two jets are required in the event to discriminate against 
+two-jet background, such as $H\rightarrow q\bar{q}$ decays, 
+$ZZ$ semi-leptonic decays and single-$Z\nu$ semi-leptonic decays. 
+The jets jets are required to satisfy $Btagging < 0.9$, 
+$Cos\theta_{2jets} > 0.87$ and $\Sigma|M_{Inv}^{2jet}| > 50\gev/c^2$. 
+{\color{red} variables need to be explained}
+In the second step, four jets are required in the event. This category
+is more important, since it a feature of the signal. 
+The event is required to satisfy  $Y_{34} > 0.005$.
+{\color{red} the Y variable needs to be explained}.
+Subsequently, the four jets are used to form all possible jet pairs and the
+jet-jet system invariant mass is examined. The jet-jet pair with invariant
+ mass closest to the $W$ boson mass is taken as the on-shell $W$ boson decay
+of the signal decay chain. The remaining two jets are assigned to the
+off-shell $W$ boson decay. The invariant mass distribution of the two
+jet-jet pairs is shown in Figure~\ref{fig:nnHfourqFMass}.
+In addition, the following conditions are required to be met by the jet-jet pairs:
 \begin{itemize}
-	\item $ 65\gev/c^2 < M_{Inv}^{Real4jet} < 85\gev/c^2$;
-	\item $ 15\gev/c^2 < M_{Inv}^{Virt4jet} < 50\gev/c^2$;
-	\item $ M_{Inv}^{Virt4jet} > -7/3\dot M_{Inv}^{Real4jet} + \frac{605}{3}\gev/c^2$;
+	\item $ 65\gev/c^2 < M_{Inv}^{Real4jet} < 85\gev/c^2$, 
+	\item $ 15\gev/c^2 < M_{Inv}^{Virt4jet} < 50\gev/c^2$, 
+	\item $ M_{Inv}^{Virt4jet} > -7/3\dot M_{Inv}^{Real4jet} + \frac{605}{3}\gev/c^2$,
 \end{itemize}
-$M_{Inv}^{Real4jet}$ means invariant mass of two jets which are regard as jets decay from real $W$ boson. 
-And $M_{Inv}^{Virt4jet}$ means invariant mass of two jets which are regard as jets decay from virtual $W$ boson.
+where $M_{Inv}^{Real4jet}$  ($M_{Inv}^{Virt4jet}$) is the invariant mass of the jet-jet system assigned to the on-shell (off-shell) $W$ boson decay.
 \begin{figure}[H]
 	\centering
 	\subfigure[]{
@@ -805,7 +815,9 @@ And $M_{Inv}^{Virt4jet}$ means invariant mass of two jets which are regard as je
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% nn qqqq %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-After the event selection, the signal is protected near 50\% as shown in Table~\ref{tab:nnHfourqcutchain}
+The event selection steps as well as the number of signal and background
+events passing each step is shown in Table~\ref{tab:nnHfourqcutchain}.
+The signal efficiency for this selection is about 50\%.
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{cccccccc}
@@ -853,7 +865,8 @@ $e^+e^-\rightarrow qq$											& $2q$											&262 \\
 \end{table}
 
 \subsubsection{Statistical result}
-After selection, we can get the distribution of missing mass, as shown in Figure~\ref{fig:nnhqqqqmismass}.
+The missing mass distribution after the selection is shown in
+ Figure~\ref{fig:nnhqqqqmismass}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{nnH/fourq/MisMass_AF}
@@ -861,11 +874,9 @@ After selection, we can get the distribution of missing mass, as shown in Figure
 \caption[]{The distribution of recoil mass of $\mu^+\mu^-$ after event selection}
 \end{figure}
 
-We can get the number of signal events by counting,
-\begin{equation*}
-N_{sig} = 9022\pm224 ;
-\end{equation*}
-and $N_{sig}$ is events of signal, the efficiency of selection $\varepsilon = 37.7\%$. Statistical uncertainty is 
+The final number of signal events is found to be $N_{sig} = 9022\pm224 $
+and the signal efficiency is $\varepsilon = 37.7\%$. 
+Hence, the expected sensitivity of the measurement for this channel is:
 \begin{equation*}
 Accu.=\frac{\sqrt{S+B}}{S} = 2.5\%.
 \end{equation*}
@@ -1037,13 +1048,17 @@ Accu.=\frac{\sqrt{S+B}}{S} = 2.5\%.
 %
 \section{Results}
 %\subsection{Statistical uncertainty}
-The function of measurement of branch ratio of $H\rightarrow WW^*$ is 
+The final result for the branching ratio BR($H\rightarrow WW^*$) is 
+obtained using the relation: 
 \begin{equation*}
-Br(H\rightarrow WW^*) = \frac{N_{sig}}{N_{total} \cdot Br_{rel.} \cdot \varepsilon}
+Br(H\rightarrow WW^*) = \frac{N_{sig}}{N_{total} \cdot Br_{rel.} \cdot \varepsilon},
 \end{equation*}
-$N_{total}=\mathcal{L}\times\sigma_{ZH}$ means total number of events of $ZH$ process; $Br_{rel.}$ means relative branch ratio for 
-$Br(H\rightarrow WW^*)$ measurement, including branch fraction of $Z$ boson and $W$ boson; $\varepsilon$ means the efficiency of 
-event selection of signal; $N_{sig}$ means the events of signal after event selection.
+where $N_{total}$ is the total number of $ee\to ZH$ producted events,
+$N_{sig}$ is the number signal events in this sample, $\varepsilon$ the
+signal efficiency of the selection and, finally, $Br_{rel.}$ is the
+relative branching ratio  of the $Br(H\rightarrow WW^*)$ measurement, including branch fraction of $Z$ boson and $W$ boson.
+{\color{red}It is not clear what this br relative is. please clarify}.
+
 
 \begin{table}[H]
   \begin{center}
@@ -1072,7 +1087,7 @@ event selection of signal; $N_{sig}$ means the events of signal after event sele
 \begin{center}
 \begin{tabular}{cccccc}
 \hline\hline
-			&	Total events $N$ &	$Br(W\rightarrow l\nu)$  &  $W\rightarrow qq$  &  $Z\rightarrow l^+\l^-$  &  $Z\rightarrow qq$  \\
+			&	Total events $N$ &	$Br(W\rightarrow l\nu)$  &  $W\rightarrow qq$  &  $Z\rightarrow \ell^+\ell^-$  &  $Z\rightarrow qq$  \\
 \hline
 Mean value	&	1060000			 &  10.86\%					 &  67.41\%			   &  3.3658\%				  &  69.91\%			\\
 Uncertainty	&	$\pm4000$		 &	$\pm0.09\%$				 &  $\pm0.27\%$		   &  $\pm0.0023\%$			  &  $\pm0.06\%$			\\
@@ -1083,10 +1098,13 @@ Uncertainty	&	$\pm4000$		 &	$\pm0.09\%$				 &  $\pm0.27\%$		   &  $\pm0.0023\%$	
 \end{center}
 \end{table}
 
-After analysis, the relative uncertainty of signal of 11 decay chains is given in Table~\ref{tab:fullstatistic}, 
-and the result of each branch ratio is given by other collaboration in Table~\ref{tab:relativeresult}. 
-The relative uncertainties of $Z\rightarrow X$, $W\rightarrow X$ and $N_{Total}$ are negligible. 
-Relative statistical uncertainty $\Delta{Br(H\rightarrow WW^*)}/Br(H\rightarrow WW^*)$ is 1.62\%.
+The relative uncertainty for the number of signal events is shown in
+Table~\ref{tab:fullstatistic}. The final result for each branching
+ratio is shown in Table~\ref{tab:relativeresult}. 
+The relative uncertainties of $Z$ and $W$ boson braching ratios, as well as
+the total number of events, $N_{Total}$, are negligible. 
+The overall combination results in a statistical uncertainty for
+$\Delta{Br(H\rightarrow WW^*)}/Br(H\rightarrow WW^*)$ of 1.62\%.
 
 %\subsection{Systematic uncertainty}
 %Because the data we have used are MC data, the analysis of systematic uncertainty should be based on a experienced discussion. 
@@ -1124,21 +1142,33 @@ Relative statistical uncertainty $\Delta{Br(H\rightarrow WW^*)}/Br(H\rightarrow 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \section{Summary and conclusion}
-In total, eleven different final states originating from $H\rightarrow WW^*$ decays have been analyzed at CEPC. The study assumes an integrated luminosity of 5000fb$^-1$ and a SM Higgs boson with mass 
-of 125$\gev$. The obtained result indicates that the branching ratio BR($H\rightarrow WW^*$) can be
-measured with an uncertainty of just 1.62\%.
+In summary, eleven different final states originating from 
+$H\rightarrow WW^*$ decays have been analyzed at CEPC. The study assumes 
+an integrated luminosity of 5000fb$^-1$ and a SM Higgs boson with mass 
+of 125$\gev$. The obtained result indicates that the branching ratio 
+BR($H\rightarrow WW^*$) can be measured with an uncertainty of just 1.62\%.
 
-Recently, only about 15\% data has been analyzed. With the CEPC R\&D goes by, the result of analysis would be optimized continuously. 
-In the future, $Z\rightarrow qq, H\rightarrow WW^*\rightarrow qqqq$ channel would be analyszed, which would improve the accuracy effectively 
-for measurement of branch ratio. Furthermore, CEPC is also a $Z$ boson factory, and it would give us a great support. 
-On the one hand, the precision of measurement result about $Z$ boson would be improved, and it would be helpful for precise 
-measurement at CEPC. On the other hand, a huge sample would be produced at $Z$ pole, and it would help us to study the 
-performance of detector better and reduce the systematic uncertainty.
+This result is based on the analysis of only 15\% of the data 
+{\color{red} which data? please clarify}.
+With the CEPC research and development project ongoing
+the result of this analysis are expected to improve further.
+In the future, $Z\rightarrow qq, H\rightarrow WW^*\rightarrow qqqq$ channel 
+will be studied, which will improve the measurement of the branching ratio.
+In addition, the CEPC will also serve as a $Z$ boson factory, increasing the
+overall physics output of the project.
+The large sample of $Z$ boson decay events will provide both an opportunity
+for precision measurements and a detector performance benchmark to reduce 
+systematic uncertainties.
 
-Later on, there are three parts to be considered. At first, systematic uncertainty has not be discussed. 
-And we would do it in the future. Secondly, the isolated lepton finder algorithm is not a general algorithm, and needs to be optimized and 
-improved, but it is suitable for recent research. At last, events of signal are got by counting, and we should learn the distribution of 
-signal and background deeper and do a fit to improve precision of analysis.
+The sensitivity  estimation presented here has considered only statistical
+uncertainties and simple event counting for the final result.
+The effect of systematic uncertainties is not discussed. In addition,
+significant improvement in the sensitivity is expected 
+if the shape of the signal-background
+discriminating variables is taken into account. Finally, improvement is
+also expected by a dedicated optimization of the isolated lepton finder
+algorithm. All these items will need to be addressed in a future study.
+
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Acknowledgements
