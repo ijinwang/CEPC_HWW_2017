@@ -322,9 +322,9 @@ signal events.
 \subsubsection{Pre-selection of $e^+e^- \rightarrow ZH, Z\rightarrow l^+l^-(l=e,\mu), H\rightarrow X$ decay}
 Compared to the SM background, the most distinguishing feature of 
 $Z\rightarrow l^+l^-(l=e,\mu), H\rightarrow X$ decays is the invariant mass 
-and the recoil mass of $Z$ boson. For the pre-selection, a di-lepton pair 
-compatible with the $Z$ boson is identified {\color{red}[how?]} 
-and subsequently a window in the di-lepton invariant mass and in the recoil mass
+and the recoil mass of $Z$ boson. For the pre-selection, {\color{blue}all the leptons with same flavor would be looped, 
+and two of them which combined invariant mass is nearest to mass of $Z$ boson are selected.} 
+And subsequently a window in the di-lepton invariant mass and in the recoil mass
 is required with numerical values shown in Table~\ref{tab:llhprecut}.
 %And the plots of invariant mass and recoil mass are in Appendix~\ref{}.
 \begin{figure}[H]
@@ -396,16 +396,15 @@ is required with numerical values shown in Table~\ref{tab:llhprecut}.
  \end{center}
 \end{table}
 This pre-selection is highly efficient for signal: more than 95\% of signal event are retained. At the same time
-more than 99\% of the background events are rejected. It has also been verified that there is no bias after pre-selection {\color{red}[how?]}.
-
+more than 99\% of the background events are rejected. 
 
 \subsubsection{Pre-selection of $e^+e^- \rightarrow ZH, Z\rightarrow \nu\bar{\nu}, H\rightarrow X$ decay.}
 The pre-selection of $\nu\nu H$ channel is less trivial to define compared to
 $eeH$ and $\mu\mu H$ decay chains. Due to the $Z\to\nu\nu$ decay, it is 
 possible to use the missing mas of the system to discriminate between signal 
 and background. In addition to the missing mass, the total mass
-and the total transverse momentum are used, as well as the constraint 
-$|cos\theta| > 0.99$ {\color{red}[what is this angle?]}.
+and the total transverse momentum are used, as well as {\color{blue}the polar angle of each final state particle
+$|cos\theta| < 0.99$ is contained}.
 \begin{figure}[H]
 	\centering
 	\subfigure[]{
@@ -469,11 +468,10 @@ $|cos\theta| > 0.99$ {\color{red}[what is this angle?]}.
 The distributions of signal and background events are similar, as shown in
 Figure~\ref{fig:nnHfilter}. The pre-selection conditions are defined in
 Table~\ref{tab:nnhprecut} and take into account this feature.
-{\color{red} [What do you mean here:] Percent of each channel has changed after pre-selection, but it makes sense for analysis}.
 
 The distribution of the same variables after reconstruction is shown in
 Figure~\ref{fig:nnHfiltered}.
-{\color{red} [What do you mean here, rephrase:] Considering the resolution of detector in full simulation, the conditions of validation should be more strict.}
+{\color{blue} Considering the resolution of detector, the conditions of pre-selection should be valided more strict in full simulation.}
 
 %\subsection{Reconstruction software !!!!!!!!!!!!!!!!!!!!!!!!!!!}
 %Arbor is a reconstruction software for CEPC. 
@@ -517,23 +515,21 @@ following, as discussed earlier.
 The $e^+e^-\rightarrow ZH, Z\rightarrow\mu^+\mu^-, H\rightarrow WW^*, WW^*\rightarrow e\nu\mu\nu$ channel is selected because it contains
 two different flavour leptons in the final state, which can be used very
 effectively to supress the backgrounds.
-{\color{red} [What do you mean here:] And only leptonic decay of $b$-jets, $W$ boson and $\tau$ would be survived.}
 
-The requirement of exactly three muons and one electron in the event has been
+The requirement of exactly three muons and one electron {\color{blue}and less than three remain neutral particles} in the event has been
 shown in Ref. {\color{red} [Moxin's article]} to allow only small backgrounds
 due to $ZZ\rightarrow \mu^+\mu^-\tau^+\tau^-$ and $ZZ\rightarrow 4\tau$ decays.
-Hence, the main background is due to other Higgs boson decays.
+Hence, the main background is due to other Higgs boson decays, such as $H\to\tau\tau$.
+
+{\color{blue} To cut down these Higgs background and $ZZ$ events background, the combined invariant mass of $e$ and $\mu$, $10~\gev/c^2 < M_{Inv}^{e\mu} < 65~\gev/c^2$, and missing mass of system, $M_{missing} < 65~\gev/c^2$, are applied.}
 
 The SM background is further reduced by the excellent expected performance
 of the CEPC vertex detector (VTX), which is planned to be 
 constructed with high resolution pixel sensors near the interaction point(IP) 
 resulting in resolution better than $4\mu m$.
-By requiring $\sqrt{(\frac{D_{0}}{sigD_{0}})^2+(\frac{Z_{0}}{sigZ_{0}})^2} < 5$
-{\color{red} [Explain the meaning of the symbols]}
-for the lepton tracks it is possible to efficiently discriminate between
-prompt electrons and muons, like the ones coming directly from $W\to\mu\nu$
-and $W\to e\nu$ decays, and electrons and muons coming from leptonic
-days of $\tau$ leptons or heavy flavour quarks. {\color{red} [With what efficiency?]}.
+{\color{blue}By requiring $\sqrt{(\frac{D_{0}}{sigD_{0}})^2+(\frac{Z_{0}}{sigZ_{0}})^2} < 5$ for $e$ and $\mu$ decayed from $W$ boson, 
+$D_0$ and $sigD_0$ showed the derivation in X-Y plane, $Z_0$ and $sigZ_0$ showed the derivation in Z direction,
+it is efficient to discriminate the background events of $\tau$ leptons or heavy flavour quarks.}
 
 \begin{figure}[H]
 \centering
@@ -541,28 +537,41 @@ days of $\tau$ leptons or heavy flavour quarks. {\color{red} [With what efficien
 		\includegraphics[width= 0.35\textwidth]{e2e2H/evuv/nRem}
 		\label{fig:euRem}
 	}
-\subfigure[]{
-	\includegraphics[width= 0.35\textwidth]{e2e2H/evuv/Vertex}
-	\label{fig:euVertex}
-}
-\caption[]{\ref{fig:euRem} The No. remain particles of $e^+e^-\rightarrow ZH, Z\rightarrow\mu^+\mu^-, H\rightarrow WW^*,  
-	WW^*\rightarrow e\nu\mu\nu$ decay. Except for four tracks, there are few photons, so we can veto semi-leptonic decay
-	and hadronic decay of background.
-	\ref{fig:euVertex} The distribution of Vertex of $e^+e^-\rightarrow ZH, Z\rightarrow\mu^+\mu^-, H\rightarrow WW^*, 
-	WW^*\rightarrow e\nu\mu\nu$ decay. And there are two leptons totally from $W$ boson, so we plus the value of each lepton.
-	And leptons from $\tau$ and $b$-jet would fly a long distance, so they would be rejected effectively.}
-\label{fig:euRemandVertex}
+	\subfigure[]{
+		\includegraphics[width= 0.35\textwidth]{e2e2H/evuv/llInvMass}
+		\label{fig:eullInv}
+	}
+	\subfigure[]{
+		\includegraphics[width= 0.35\textwidth]{e2e2H/evuv/MisMass}
+		\label{fig:euMisMass}
+	}
+	\subfigure[]{
+		\includegraphics[width= 0.35\textwidth]{e2e2H/evuv/Vertex}
+		\label{fig:euVertex}
+	}
+	\caption[]{
+		\ref{fig:euRem} The No. remain particles of $e^+e^-\rightarrow ZH, Z\rightarrow\mu^+\mu^-, H\rightarrow WW^*,  
+		WW^*\rightarrow e\nu\mu\nu$ decay. Except for four tracks, there are few photons, so we can veto semi-leptonic decay
+		and hadronic decay of background.
+		\ref{fig:eullInv} The distribution of combined invariant mass of electron and muon. 
+		Since these two leptons decayed from different $W$ boson, the combined invariant mass of them 
+		should be less than the mass of on-shell $W$ boson.
+		\ref{fig:euMisMass} The distribution of missing mass of system. Since there are two neutrinos in this signal process 
+		and much more neutrinos in background, four in $ZZ$ background and $H\to\tau\tau$ background, the missing mass should 
+		be less than them.
+		\ref{fig:euVertex} The distribution of Vertex of $e^+e^-\rightarrow ZH, Z\rightarrow\mu^+\mu^-, H\rightarrow WW^*, 
+		WW^*\rightarrow e\nu\mu\nu$ decay. And there are two leptons totally from $W$ boson, so we plus the value of each lepton.
+		And leptons from $\tau$ and $b$-jet would fly a long distance, so they would be rejected effectively.}
+	\label{fig:euRemandVertex}
 \end{figure}
 
-The number of events passing each selection step is shown in 
-Table~\ref{tab:emu} {\color{red} Not all the selection steps have been discussed in the text}. The main background of this channel comes from
-the  $e^+e^-\rightarrow  ZZ\rightarrow\tau^+\tau^-\mu^+\mu^- $ process, 
-as shown in Table~\ref{tab:uueubkg}.
+The number of events passing each selection step is shown in Table~\ref{tab:emu}. The main background of this channel comes from
+the  $e^+e^-\rightarrow  ZZ\rightarrow\tau^+\tau^-\mu^+\mu^- $ process, as shown in Table~\ref{tab:uueubkg}.
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{cccc}
 \hline \hline
-\multicolumn{1}{c}{Category} & \multicolumn{1}{c}{Signal}&\multicolumn{1}{c}{$ZH$ background}&\multicolumn{1}{c}{SM background}\\   
+\multicolumn{1}{c}{Category}& \multicolumn{1}{c}{Signal}&\multicolumn{1}{c}{$ZH$ background}&\multicolumn{1}{c}{SM background}\\   
 \hline
   Total                                                 &     172   & 34624 &700311\\
   Validation of pre-selection				            &     136   & 29263 & 117395\\
@@ -612,12 +621,11 @@ Accu.=\frac{\sqrt{S+B}}{S} = 11\%.
 \subsection{Analysis of $e^+e^-\rightarrow ZH, Z\rightarrow e^+e^-, H\rightarrow WW^*, WW^*\rightarrow \mu\nu q\bar{q}$ decay}
 \subsubsection{Event selection}
 This channel is more promising for a high precision measurement compared to
-the $ZWW\to \mu\mu\mu\nu  e\nu$ channel  discussed in the previous section
+the $ZWW^*\to \mu\mu\mu\nu  e\nu$ channel  discussed in the previous section
 due to the larger branching ratios involved.
 The final state consists of three leptons, several jets and neutrinos.
-The fully leptonic decay background of $\tau$ events can be reduced
-by requiring that the number of particles is less than 30 and larger than 7
-{\color{red} [what do you mean here? rephrase]}. 
+The fully leptonic decay background {\color{blue} and full hadronic decay} can be reduced a lot
+by requiring the number of remain particles, {\color{blue}$7 < N_{Remain} < 30$, except for three energetic leptons}.
 
 In this final state, the most effective criteria to supress the
 SM background in  pre-selection are the invariant mass and the recoil mass 
@@ -635,10 +643,9 @@ The excellent expected CEPC tracking performance is exploited to
 distinguish muons from $W$  and muons from $\tau$ lepton decays
 using the requirement 
 $\sqrt{(\frac{D_{0}}{sigD_{0}})^2+(\frac{Z_{0}}{sigZ_{0}})^2} < 4$.
-In addition, in order to veto background from the $t$-channel, 
-amtransverse momentum requirement $p_T > 5\gev$ is applied.
-{\color{red} This cut is on what exactly? It needs further clarifications why
-the t channel.}
+In addition, in order to veto background from the $t$-channel
+{\color{blue}because there are lots of $t$-channel background according to Feynman diagram, }
+a transverse momentum requirement $p_T > 5\gev$ is applied.
 
 \begin{figure}[H]
 \centering
@@ -678,8 +685,8 @@ the t channel.}
 
 The selection criteria, as well as the signal and background events
 passing each of them, are summarized in in Table~\ref{tab:eeuvqqCutchain}.
-The main backgrounds after the full selection are shown in
-Table~\ref{tab:uuuvqqbkg}. {\color{red}What is the difference compared to the last step in the previous table?}
+The main backgrounds after the full selection are shown in Table~\ref{tab:uuuvqqbkg}, 
+{\color{blue}and only background which remain number is larger than ten would be regarded as main background}.
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ccccc}
@@ -749,17 +756,20 @@ after the quark hadronization takes place.
 	is required, $E > 1\gev$}
 \end{figure}
 
-{\color{red}[It is not clear how this process is done, please clarify]}
-For this study jet selection is done in two steps. In the first step,
+{\color{red}[It is not clear how this process is done, please clarify.(\color{blue} just do jet clustering twice.)]}
+For this study, jet selection is done in two steps. In the first step,
 two jets are required in the event to discriminate against 
 two-jet background, such as $H\rightarrow q\bar{q}$ decays, 
 $ZZ$ semi-leptonic decays and single-$Z\nu$ semi-leptonic decays. 
 The jets jets are required to satisfy $Btagging < 0.9$, 
 $Cos\theta_{2jets} > 0.87$ and $\Sigma|M_{Inv}^{2jet}| > 50\gev/c^2$. 
+{\color{blue} $Btagging$ means the probilities of flavor tagging for each jet and sum them up. 
+$Cos\theta_{2jets} $ means the cos angle of this two jets.
+$\Sigma|M_{Inv}^{2jet}|$ means sum the invariant mass of each jet.}
 {\color{red} variables need to be explained}
 In the second step, four jets are required in the event. This category
-is more important, since it a feature of the signal. 
-The event is required to satisfy  $Y_{34} > 0.005$.
+is more important, since it is the feature of the signal. 
+The event is required to satisfy  $Y_{34} > 0.005$. {\color{blue}(I can not explain it clearly, but I would give a reference).}
 {\color{red} the Y variable needs to be explained}.
 Subsequently, the four jets are used to form all possible jet pairs and the
 jet-jet system invariant mass is examined. The jet-jet pair with invariant
@@ -1055,10 +1065,8 @@ Br(H\rightarrow WW^*) = \frac{N_{sig}}{N_{total} \cdot Br_{rel.} \cdot \varepsil
 \end{equation*}
 where $N_{total}$ is the total number of $ee\to ZH$ producted events,
 $N_{sig}$ is the number signal events in this sample, $\varepsilon$ the
-signal efficiency of the selection and, finally, $Br_{rel.}$ is the
-relative branching ratio  of the $Br(H\rightarrow WW^*)$ measurement, including branch fraction of $Z$ boson and $W$ boson.
+signal efficiency of the selection and, finally, $Br_{rel.}$ included branch fraction of $Z$ boson and $W$ boson.
 {\color{red}It is not clear what this br relative is. please clarify}.
-
 
 \begin{table}[H]
   \begin{center}
@@ -1148,8 +1156,7 @@ an integrated luminosity of 5000fb$^-1$ and a SM Higgs boson with mass
 of 125$\gev$. The obtained result indicates that the branching ratio 
 BR($H\rightarrow WW^*$) can be measured with an uncertainty of just 1.62\%.
 
-This result is based on the analysis of only 15\% of the data 
-{\color{red} which data? please clarify}.
+This result is based on the analysis of only 15\% of the data {\color{blue} of $H\to WW^*$ events.} 
 With the CEPC research and development project ongoing
 the result of this analysis are expected to improve further.
 In the future, $Z\rightarrow qq, H\rightarrow WW^*\rightarrow qqqq$ channel 
